@@ -1,0 +1,87 @@
+@import '../../bower_components/bootstrap/less/bootstrap.less';
+@import '../../bower_components/fontawesome/less/font-awesome.less';
+@import 'base.less';
+
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.container-header {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+
+  > img {
+    width: 200px;
+  }
+
+  > .container-header-title {
+    text-align: center;
+    color: #394d54;
+    text-shadow: 2px 2px 0 #dddddd,9px 8px 0 rgba(0,0,0,.15);
+    font-weight: 900;
+    font-size: 50px;
+    margin: 20px 0;
+  }
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+    padding: 0px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.main-section {
+  width: 1000px;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 768px;
+}
+
+//table style
+.table-invoice {
+    // margin-top:30px;
+    border-spacing:5px;
+    border-collapse:separate;
+}
+.table-invoice>thead>tr>th {
+    border-bottom:none;
+}
+.table-invoice>tbody>tr>td {
+    border-top:none;
+}
+.table-invoice thead tr th {
+    background:#e8e9f0;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    vertical-align:middle;
+}
+.table-invoice thead tr th:first-child,.table-invoice tbody tr td:first-child {
+    text-align:center;
+}
+.table-invoice tbody tr td {
+    background:#f5f6f9;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    vertical-align:middle;
+}
+.table-invoice tbody tr td:last-child {
+    font-size: 125%;
+}
+
